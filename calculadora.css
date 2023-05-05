@@ -4,6 +4,7 @@
     margin-bottom: 10px;
 
     border-radius: 10px;
+    text-align: right; /* conseguimos que el marcador de texto se encuentre al final */
 }
 
 .keys {
