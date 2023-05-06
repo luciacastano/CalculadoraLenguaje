@@ -1,3 +1,11 @@
+/* --- CENTRAR BIEN LA CALCULADORA --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establecer la altura del body en 100vh (viewport height) para asegurarnos de que todo esté centrado verticalmente */
+}
+
 .screen {
     height: 50px;
     width: 150px;
