@@ -11,9 +11,14 @@
 <body>
     <div class="container">
         <input type="text" class="screen" />
-        <input type="button" value="C" class="btn" onclick="clearScreen()"/>
+        <input type="button" value="C" class="clearBtn" onclick="clearScreen()"/>
 
         <div class="keys">
+            <input type="button" value="log" class="operator" onclick="logFunct()"/> <!-- logaritmo -->
+            <input type="button" value="sin" class="operator" onclick="sinFunct()"/> <!-- seno -->
+            <input type="button" value="cos" class="operator" onclick="cosFunct()"/> <!-- coseno -->
+            <input type="button" value="tan" class="operator" onclick="tanFunct()"/> <!-- tangente -->
+            
             <input type="button" value="7" class="btn" onclick="onScreen('7')"/>
             <input type="button" value="8" class="btn" onclick="onScreen('8')"/>
             <input type="button" value="9" class="btn" onclick="onScreen('9')"/>

@@ -28,3 +28,36 @@ function calcOperation(operation) {
      * argumento es operation, que es el que toma el valor de la pantalla
     */
 }
+
+
+/* --- Funcionalidades especiales (log, sin, cos, tan) --- */
+/* --- Función para calcular el logaritmo --- */
+function logFunct() {
+    const value = parseFloat(screen.value); // obtiene el valor de la pantalla y lo pasa a float
+    const result = Math.log10(value); // Math.log() -> función que calcula el logaritmo (en base 10) y lo guarda en la variable result
+    screen.value = result; // muestra el resultado de la operación
+}
+
+/* --- Función para calcular el seno --- */
+function sinFunct() {
+    const value = parseFloat(screen.value); // obtiene el valor de la pantalla y lo pasa a float
+    const radianes = (value * Math.PI) / 180; // converte a radianes si no, está calculando en grados
+    const result = Math.sin(radianes); // Math.sin() -> función que calcula el seno y lo guarda en la variable result
+    screen.value = result; // muestra el resultado de la operación
+}
+
+/* --- Función para calcular el coseno --- */
+function cosFunct() {
+    const value = parseFloat(screen.value); // obtiene el valor de la pantalla y lo pasa a float
+    const radianes = (value * Math.PI) / 180; // converte a radianes si no, está calculando en grados
+    const result = Math.cos(radianes); // Math.cos() -> función que calcula el coseno y lo guarda en la variable result
+    screen.value = result; // muestra el resultado de la operación
+}
+
+/* --- Función para calcular la tangente --- */
+function tanFunct() {
+    const value = parseFloat(screen.value); // obtiene el valor de la pantalla y lo pasa a float
+    const radianes = (value * Math.PI) / 180; // converte a radianes si no, está calculando en grados
+    const result = Math.tan(radianes); // Math.tan() -> función que calcula la tangente y lo guarda en la variable result
+    screen.value = result; // muestra el resultado de la operación
+}
